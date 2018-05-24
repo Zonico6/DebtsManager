@@ -1,0 +1,9 @@
+TODO:
+ - Add functionality of ShowDebtsActivity.java and DebtListAdapter.java to their corresponding version in debtor view:
+      - Especially separate getView a little more
+      - Show paid/unpaid
+
+ - Add debts, others own to you
+
+ - Highlight older debts in ShowDebtsActivity
+ - Debtor_view: Remember that the name's gonna be embedded in the menu

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zonico.debtsmanager.AddDebtActivity">
+
+    <AutoCompleteTextView
+        android:id="@+id/debtor_name"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:dropDownHeight="400dp"
+        android:dropDownWidth="match_parent"
+        android:hint="name"
+        android:text=""
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/euro"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/euro"
+        android:inputType="numberDecimal"
+        android:textSize="20sp"
+        android:layout_alignBottom="@+id/cent"
+        android:layout_alignLeft="@+id/add"
+        android:layout_alignStart="@+id/add" />
+
+    <EditText
+        android:id="@+id/cent"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/cent"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="34dp"
+        android:layout_above="@+id/comment"
+        android:layout_alignLeft="@+id/date"
+        android:layout_alignStart="@+id/date"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp" />
+
+    <EditText
+        android:id="@+id/comment"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:ems="10"
+        android:hint="@string/comment"
+        android:inputType="textMultiLine"
+        android:textSize="24sp"
+        android:layout_above="@+id/add"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="14dp" />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="130sp"
+        android:layout_height="70dp"
+        android:layout_alignLeft="@+id/comment"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/comment"
+        android:layout_marginBottom="35dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:text="@string/add_debt"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_date"
+        android:textColor="#3A3A3A"
+        android:textSize="26sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_alignBaseline="@+id/add"
+        android:layout_alignBottom="@+id/add"
+        android:layout_toRightOf="@+id/euro"
+        android:layout_toEndOf="@+id/euro" />
+
+</RelativeLayout>

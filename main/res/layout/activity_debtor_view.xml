@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.zonico.debtsmanager.DebtorViewActivity">
+
+    <View
+        android:id="@+id/separator_horizontal_rectangle"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/rectangle_black" />
+
+    <TextView
+        android:id="@+id/total_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/amount_of_open_debts"
+        android:textSize="30sp"
+        android:textColor="#000000"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/total_debts_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/total_tv"
+        android:layout_alignStart="@+id/total_tv"
+        android:layout_below="@+id/total_tv"
+        android:layout_marginTop="8dp"
+        android:text="@string/sum_of_debts"
+        android:textColor="#000000"
+        android:textSize="30sp" />
+
+    <ListView
+        android:id="@+id/debts_lv"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:divider="#321145"
+        android:dividerHeight="4dp"
+        android:layout_below="@+id/separator_horizontal_rectangle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

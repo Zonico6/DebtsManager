@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.zonico.debtsmanager.ShowDebtsActivity">
+
+    <item
+        android:id="@+id/search_debtors"
+        android:actionViewClass="android.widget.SearchView"
+        android:icon="@drawable/ic_search_white_24dp"
+        android:title="@string/search_debtors"
+        app:showAsAction="ifRoom" />
+
+    <group android:checkableBehavior="all">
+        <item
+            android:id="@+id/show_paid"
+            android:title="@string/show_paid_debts"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/show_unpaid"
+            android:title="@string/show_unpaid_debts"
+            app:showAsAction="never" />
+    </group>
+</menu>

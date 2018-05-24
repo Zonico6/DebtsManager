@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/pay_back"
+        android:title="@string/pay_back"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/goto_show_debts"
+        android:title="@string/show_all_debts"
+        app:showAsAction="ifRoom" />
+
+    <group android:checkableBehavior="all">
+        <item
+            android:id="@+id/show_paid"
+            android:title="@string/show_paid_debts"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/show_unpaid"
+            android:title="@string/show_unpaid_debts"
+            app:showAsAction="never" />
+    </group>
+</menu>

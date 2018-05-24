@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#151440</color>
+    <color name="colorPrimaryDark">#241C59</color>
+    <color name="colorAccent">#8F9DB2</color>
+
+    <color name="colorDebtView0">#E5AB9C</color>
+    <color name="colorDebtView1">#F3BB9A</color>
+    <color name="colorDebtView2">#F8DFBD</color>
+</resources>
